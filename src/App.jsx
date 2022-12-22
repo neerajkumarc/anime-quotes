@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="bg-[url('./assets/bg.gif')] w-screen h-screen bg-no-repeat bg-cover bg-center flex justify-center items-center">
-      <div className="flex justify-center items-center gap-24 flex-col backdrop-blur-[2px] h-screen w-screen p-8 bg-gradient-to-t from-black via-[#000000b6] to-trasparent">
+      <div className="flex justify-center items-center gap-24 flex-col backdrop-blur-[2px] h-screen w-screen p-8 bg-gradient-to-t from-black to-trasparent">
         <motion.img
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
