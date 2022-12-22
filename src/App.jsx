@@ -53,6 +53,20 @@ function App() {
         >
           {quote == "" ? `Get Quotes 🔥` : ` Next`}
         </motion.button>
+        {quote == "" ? (
+          <p className="text-[#575757] ">
+            Developed with ❤ by{" "}
+            <a
+              className="underline italic font-semibold "
+              href="https://neerajk.netlify.app"
+              target="_blank "
+            >
+              Neerajkumar
+            </a>
+          </p>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
