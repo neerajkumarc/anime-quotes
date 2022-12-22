@@ -22,8 +22,10 @@ function App() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
+          className="sm:w-[50%]"
           src={aq}
           alt="aq"
+          
         />
         {quote == "" ? (
           <motion.div
@@ -54,7 +56,7 @@ function App() {
           {quote == "" ? `Get Quotes 🔥` : ` Next`}
         </motion.button>
         {quote == "" ? (
-          <p className="text-[#575757] ">
+          <p className="text-[#777777] ">
             Developed with ❤ by{" "}
             <a
               className="underline italic font-semibold "
