@@ -16,8 +16,8 @@ function App() {
   };
 
   return (
-    <div className="bg-[url('./assets/bg.gif')] w-screen h-screen bg-no-repeat bg-cover bg-center flex justify-center items-center">
-      <div className="flex justify-center items-center gap-24 flex-col backdrop-blur-[2px] h-screen w-screen p-8 bg-gradient-to-t from-black to-trasparent">
+    <div className="bg-[url('./assets/bg.jpg')] w-screen h-screen bg-no-repeat bg-cover bg-center flex justify-center items-center">
+      <div className="flex justify-center items-center gap-24 flex-col backdrop-blur-[1px] h-screen w-screen p-8 bg-gradient-to-b from-black via-[#31313188] to-transparent">
         <motion.img
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -25,7 +25,6 @@ function App() {
           className="sm:w-[50%]"
           src={aq}
           alt="aq"
-          
         />
         {quote == "" ? (
           <motion.div
@@ -51,15 +50,15 @@ function App() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
           onClick={handleClick}
-          className="bg-black border-2 border-white text-white text-2xl px-12 p-2 rounded-lg font-bold active:scale-[.95] animate-pulse"
+          className="bg-black border-2 border-white text-white text-2xl px-12 p-2 rounded-lg font-bold active:scale-[.95] animate-pulse cursor-pointer"
         >
           {quote == "" ? `Get Quotes 🔥` : ` Next`}
         </motion.button>
         {quote == "" ? (
-          <p className="text-[#777777] ">
+          <p className="text-[#bfbfbf] active: ">
             Developed with ❤ by{" "}
             <a
-              className="underline italic font-semibold "
+              className="underline italic font-semibold text-yellow-500"
               href="https://neerajk.netlify.app"
               target="_blank "
             >
