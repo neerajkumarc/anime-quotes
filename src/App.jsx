@@ -41,7 +41,7 @@ function App() {
           <div className="text-white">
             <p className="italic">Anime : {aname}</p>
             <p className="mb-8 italic">Character : {name}</p>
-            <p className=" tracking-wider font-semibold w-[320px] h-[180px] p-4 overflow-scroll md:overflow-auto md:w-[520px] sm:no-scrollbar">
+            <p className=" tracking-wider font-medium w-[320px] h-[180px] p-4 overflow-scroll md:overflow-auto md:w-[520px] sm:no-scrollbar">
               <q> {` ${quote} `} </q>
             </p>
           </div>
@@ -51,7 +51,7 @@ function App() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
           onClick={handleClick}
-          className="bg-black border-2 border-white text-white text-2xl px-12 p-2 rounded-lg font-bold active:scale-[.95] cursor-pointer"
+          className="bg-black border-2 border-white text-white text-2xl px-12 p-2 rounded-lg font-bold active:scale-[.95] cursor-pointer animate-pulse"
         >
           {quote == "" ? `Get Quotes 🔥` : ` Next`}
         </motion.button>
