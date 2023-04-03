@@ -39,9 +39,9 @@ function App() {
           </motion.div>
         ) : (
           <div className="text-white">
-            <p className="italic">Anime : {aname}</p>
-            <p className="mb-8 italic">Character : {name}</p>
-            <p className=" tracking-wider font-medium w-[320px] h-[180px] p-4 overflow-scroll md:overflow-auto md:w-[520px] sm:no-scrollbar">
+            <p className="italic"><span className="font-bold">Anime :</span> {aname}</p>
+            <p className="mb-8 italic"><span className="font-bold">Character :</span>  {name}</p>
+            <p className=" tracking-wider font-medium w-[320px] h-[180px] overflow-scroll md:overflow-auto md:w-[520px] sm:no-scrollbar">
               <q> {` ${quote} `} </q>
             </p>
           </div>
